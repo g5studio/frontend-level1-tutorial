@@ -1,0 +1,57 @@
+.table__container {
+  height: 7.5rem;
+  display: inline-block;
+  overflow: auto;
+  position: relative;
+}
+.table__container::-webkit-scrollbar {
+  width: 0.375rem;
+  height: 0.375rem;
+}
+.table__container::-webkit-scrollbar-thumb {
+  background: #dfe3e8;
+  border-radius: 10px;
+}
+.table__container table {
+  border-collapse: collapse;
+}
+.table__header {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.table__header tr {
+  background-color: #f4f6f8;
+}
+.table__header th {
+  height: 2rem;
+  font-size: 0.875rem;
+  text-align: left;
+}
+.table__header th:not(:first-child) {
+  padding-left: 1rem;
+}
+.table__header th:first-child {
+  padding-left: 1.5rem;
+}
+.table__header th:last-child {
+  padding-right: 1.5rem;
+}
+.table__body td {
+  height: 2.5rem;
+  font-size: 0.75rem;
+}
+.table__body td:not(:first-child) {
+  padding-left: 1rem;
+}
+.table__body td:first-child {
+  padding-left: 1.5rem;
+}
+.table__body td:last-child {
+  padding-right: 1.5rem;
+}
+.table__body tr {
+  box-shadow: 0px 3px 5px 0px rgba(236, 238, 241, 0.6);
+}
+
+/*# sourceMappingURL=table.css.map */

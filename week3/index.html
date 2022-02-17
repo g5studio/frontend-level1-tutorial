@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../shared/base.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="../shared/favicon.ico">
+    <title>Week-3 Position</title>
+</head>
+
+<body>
+    <nav menu class="flex-row align-items-center">
+        <a href="list-practice.html">列表練習</a>
+        <a href="image-practice.html">圖層練習</a>
+    </nav>
+    <main>
+        <h2 class="mt-1">定位</h2>
+        <section class="container position-relative mt-1">
+            <div class="position-relative">
+                z-index: 0
+            </div>
+            <div class="position-relative layer-2">
+                z-index: 2
+            </div>
+            <div class="position-absolute">
+                依照階層最靠近的relative父元素進行絕對定位
+            </div>
+            <div class="position-sticky">黏著定位</div>
+            <article>
+                漢皇重色思傾國，御宇多年求不得。楊家有女初長成，養在深閨人未識。<br>
+                天生麗質難自棄，一朝選在君王側。回眸一笑百媚生，六宮粉黛無顏色。<br>
+                春寒賜浴華清池，溫泉水滑洗凝脂。侍兒扶起嬌無力，始是新承恩澤時。<br>
+                雲鬢花顏金步搖，芙蓉帳暖度春宵。春宵苦短日高起，從此君王不早朝。<br>
+                承歡侍宴無閒暇，春從春遊夜專夜。後宮佳麗三千人，三千寵愛在一身。<br>
+                金屋妝成嬌侍夜，玉樓宴罷醉和春。姊妹弟兄皆列土，可憐光彩生門戶。<br>
+                遂令天下父母心，不重生男重生女。驪宮高處入青雲，仙樂風飄處處聞。<br>
+                緩歌慢舞凝絲竹，盡日君王看不足。漁陽鼙鼓動地來，驚破霓裳羽衣曲。
+            </article>
+        </section>
+        <h2 class="mt-1">列表</h2>
+        <div class="d-flex flex-row align-items-center mt-0_75">
+            <ul>
+                <li class="red-marker">無編號</li>
+                <li>無編號</li>
+                <li>無編號</li>
+            </ul>
+            <ol>
+                <li>有編號</li>
+                <li>有編號</li>
+                <li>有編號</li>
+            </ol>
+        </div>
+        <h2 class="mt-1">圖片</h2>
+        <img class="mt-0_75" src="" alt="查無圖片">
+        <img class="mt-0_75 w-100" src="images/example.jpg" alt="">
+    </main>
+    <a class="top-nav" href="#top">top</a>
+</body>
+
+</html>

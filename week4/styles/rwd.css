@@ -1,0 +1,26 @@
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.bg-red {
+    background-color: rgb(236, 176, 176);
+}
+
+.bg-blue {
+    background-color: rgba(133, 217, 231, 0.931);
+}
+
+.container > div {
+    height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .container > div {
+        height: 50vh;
+    }
+}

@@ -1,0 +1,23 @@
+.container {
+    padding: 1rem;
+}
+
+.animation-twink {
+    animation: twink 0.8s infinite;
+}
+
+img {
+    width: 2rem;
+    filter: drop-shadow(1px 1px 2px #333);
+}
+
+@keyframes twink {
+    0% {
+        opacity: 1;
+        transform: rotateY(-180deg);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

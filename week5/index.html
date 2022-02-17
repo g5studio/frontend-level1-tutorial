@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../shared/base.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="../shared/favicon.ico">
+    <title>Week-5 Table</title>
+</head>
+
+<body>
+    <nav menu class="flex-row align-items-center">
+        <a href="table.html">Table練習</a>
+        <a href="animation.html">動畫練習</a>
+    </nav>
+    <main class="container">
+        <h3>表格</h3>
+        <section class="table__container mt-1">
+            <table>
+                <caption class="table__title">三年二班段考成績表</caption>
+                <thead class="table__header">
+                    <th>學號</th>
+                    <th>姓名</th>
+                    <th>國文</th>
+                    <th>英文</th>
+                    <th>數學</th>
+                </thead>
+                <tbody>
+                    <tr class="table__row">
+                        <td>No.001</td>
+                        <td>William</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>No.0012</td>
+                        <td>Alan</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>No.003</td>
+                        <td>Ken</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="table__row--last">
+                        <td colspan="2">平均</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section class="table__container ml-1 mt-1">
+            <table>
+                <tr>
+                    <th>姓名</th>
+                    <td>William</td>
+                </tr>
+                <tr>
+                    <th>性別</th>
+                    <td>男</td>
+                </tr>
+                <tr>
+                    <th>生日</th>
+                    <td>1998-10-14</td>
+                </tr>
+            </table>
+        </section>
+        <h3 class="mt-1">動畫</h3>
+        <img class="animation-twink mt-1" src="images/Golden_star.svg.png" alt="">
+        <h3 class="mt-1">自製主題</h3>
+        <ul class="theme-list">
+            <li class="theme-list__item text-danger border-danger">
+                danger
+            </li>
+            <li class="theme-list__item text-primary border-primary">
+                primary
+            </li>
+            <li class="theme-list__item text-warning border-warning">
+                warning
+            </li>
+            <li class="theme-list__item text-info border-info">
+                info
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>

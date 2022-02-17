@@ -1,0 +1,65 @@
+@import "colors";
+@import "variables";
+
+.table {
+    &__container {
+        height: 7.5rem;
+        display: inline-block;
+        overflow: auto;
+        position: relative;
+        &::-webkit-scrollbar {
+            width: 0.375rem;
+            height: 0.375rem;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #dfe3e8;
+            border-radius: 10px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+    }
+
+    &__header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        tr {
+            background-color: $gainsboro;
+        }
+        th {
+            height: 2rem;
+            font-size: map-get($font-level, "sm");
+            text-align: left;
+            &:not(:first-child) {
+                padding-left: 1rem;
+            }
+            &:first-child {
+                padding-left: 1.5rem;
+            }
+            &:last-child {
+                padding-right: 1.5rem;
+            }
+        }
+    }
+
+    &__body {
+        td {
+            height: 2.5rem;
+            font-size: map-get($font-level, "xs");
+            &:not(:first-child) {
+                padding-left: 1rem;
+            }
+            &:first-child {
+                padding-left: 1.5rem;
+            }
+            &:last-child {
+                padding-right: 1.5rem;
+            }
+        }
+
+        tr {
+            box-shadow: 0px 3px 5px 0px rgb(236 238 241 / 60%);
+        }
+    }
+}

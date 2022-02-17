@@ -1,0 +1,56 @@
+main {
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+input {
+    display: none;
+}
+
+label {
+    box-sizing: border-box;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: 1px solid rgb(214, 0, 19);
+}
+
+label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgb(214, 0, 19);
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
+label::after {
+    position: absolute;
+    bottom: calc(-48px - 1rem);
+    right: 50%;
+    transform: translateX(50%);
+    content: url("../images/Mushroom-red.png");
+}
+
+input:checked + label {
+    transition: 0.5s;
+    border-color: rgb(0, 75, 220);
+}
+
+input:checked + label::before {
+    transform: translateY(-50%) translateX(95px);
+    background-color: rgb(0, 75, 220);
+}
+
+input:checked + label::after {
+    content: url("../images/Mushroom-blue.png");
+}

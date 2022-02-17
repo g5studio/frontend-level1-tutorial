@@ -1,0 +1,12 @@
+div {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+
+div:hover {
+    border-color: red;
+    color: red;
+    transition: 0.5s;
+}

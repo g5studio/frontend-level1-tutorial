@@ -1,0 +1,13 @@
+a:link {
+    color: black;
+}
+a:visited {
+    color: blue;
+}
+a:active {
+    color: orange;
+}
+
+p {
+    border: 1px solid black;
+}

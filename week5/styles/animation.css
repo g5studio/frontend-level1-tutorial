@@ -1,0 +1,51 @@
+main {
+    padding-left: 1rem;
+}
+
+section {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    box-sizing: border-box;
+}
+
+span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 0.8rem;
+    background-color: black;
+    animation: around 2s infinite;
+}
+
+@keyframes around {
+    25% {
+        transform: translate(5rem, 0);
+    }
+
+    26% {
+        transform: translate(calc(5rem + 1px), 0) rotateZ(90deg);
+    }
+
+    50% {
+        transform: translate(5rem, 5rem) rotateZ(90deg);
+    }
+
+    51% {
+        transform: translate(calc(5rem - 1px), 5rem) rotateZ(180deg);
+    }
+
+    75% {
+        transform: translate(0, 5rem) rotateZ(180deg);
+    }
+
+    76% {
+        transform: translate(0, calc(5rem - 1px)) rotateZ(270deg);
+    }
+
+    99% {
+        transform: translate(0, 1px) rotateZ(270deg);
+    }
+}
